@@ -2,8 +2,7 @@ import axios, { AxiosError } from 'axios';
 import { WeatherData, ApiError } from '../types/weather';
 // API Configuration
 const API_BASE_URL = 'https://api.openweathermap.org/data/2.5';
-const API_KEY = 'YOUR_API_KEY_HERE'; // Replace with actual API key
-// Create axios instance with default config
+const API_KEY = 'cb4047c605d7b709e2b01bf2da4e74f1';
 const weatherApiClient = axios.create({
   baseURL: API_BASE_URL,
   timeout: 10000,
@@ -11,7 +10,6 @@ const weatherApiClient = axios.create({
     'Content-Type': 'application/json'
   }
 });
-// Request interceptor for adding API key
 weatherApiClient.interceptors.request.use(config => {
   config.params = {
     ...config.params,
@@ -22,7 +20,6 @@ weatherApiClient.interceptors.request.use(config => {
 }, error => {
   return Promise.reject(error);
 });
-// Response interceptor for error handling
 weatherApiClient.interceptors.response.use(response => response, (error: AxiosError) => {
   const apiError: ApiError = {
     message: 'An error occurred while fetching weather data',

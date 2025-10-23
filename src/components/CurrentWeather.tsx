@@ -1,4 +1,3 @@
-import React from 'react';
 import { WeatherData } from '../types/weather';
 import { Cloud, Droplets, Wind, Eye, Gauge, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';

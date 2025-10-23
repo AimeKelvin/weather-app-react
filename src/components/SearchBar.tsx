@@ -35,7 +35,7 @@ export function SearchBar({
         scale: 1.02
       }} whileTap={{
         scale: 0.98
-      }} className="px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-red-600 hover:bg-red-700 disabled:bg-gray-300 text-white rounded-xl font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+      }} className="px-4 sm:px-6 py-2.5 text-black sm:py-3 text-sm sm:text-base bg-red-600 hover:bg-red-700 disabled:bg-gray-300 text-white rounded-xl font-medium transition-all duration-300 shadow-sm hover:shadow-md">
           Search
         </motion.button>
         <motion.button type="button" onClick={onUseLocation} disabled={isLoading} whileHover={{
