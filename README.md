@@ -1,6 +1,6 @@
 # weather-app-react
 
-IMPORTANT — requires internet
+IMPORTANT — requires internet and weather api key is exposed (not stored in env) because this is not a real application.
 --------------------------------
 This app must be run with an active internet connection. It fetches live weather and forecast data from a remote API and will not display real-time information while offline.
 
