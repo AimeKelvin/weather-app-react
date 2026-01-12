@@ -8,7 +8,7 @@ Short description
 -----------------
 A minimal React + TypeScript weather single-page app (Vite + Tailwind). Search for a city to see current conditions and a short forecast. The code demonstrates typed API calls, a small component layout, and basic error/loading states.
 
-Quick start
+Quick start 
 -----------
 1. Install dependencies:
 

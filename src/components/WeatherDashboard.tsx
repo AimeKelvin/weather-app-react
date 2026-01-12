@@ -24,7 +24,6 @@ export function WeatherDashboard() {
     localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
-  // Load default city (Kigali) on page load
   const loadDefaultWeather = async () => {
     setIsLoading(true);
     setError(null);
@@ -38,7 +37,6 @@ export function WeatherDashboard() {
     }
   };
 
-  // Search by city
   const handleSearch = async (city: string) => {
     setIsLoading(true);
     setError(null);
@@ -52,7 +50,6 @@ export function WeatherDashboard() {
     }
   };
 
-  // Search by geolocation
   const handleUseLocation = () => {
     if ('geolocation' in navigator) {
       setIsLoading(true);
